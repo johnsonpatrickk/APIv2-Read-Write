@@ -17,5 +17,6 @@ Note: for 1.7.x support download v2.2 from Downloads tab
 
 
 
-Installation
-Drag and drop the application/libraries/Format.php and application/libraries/REST_Controller.php files into your application's directories. Either autoload the  REST_Controller  class or  require_once  it at the top of your controllers to load it into the scope. Additionally, copy the rest.php file from application/config in your application's configuration directory.
+<code>
+
+</code>
