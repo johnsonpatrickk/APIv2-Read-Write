@@ -1,7 +1,4 @@
-<?php
-
-if (! defined ( "BASEPATH" ))
-	exit ( "No direct script access allowed" );
+<?php if (! defined ( "BASEPATH" )) exit ( "No direct script access allowed" );
 
 /**
  * APIv2 AdminUI Pilot Admin Controller
