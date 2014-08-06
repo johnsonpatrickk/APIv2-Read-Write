@@ -53,7 +53,7 @@ class Admin extends CI_Controller {
 		$config ["anchor_class"] = "class=\"btn btn-primary btn-sm\"";
 		$this->pagination->initialize ( $config );
 		$data ["pagination"] = $this->pagination->create_links ();
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = "Account Manager";
 		$data ["panel_title"] = "AdminUI Accounts";
 		$data ["action_passwd_chg"] = site_url ( "access_control/admin/password_change_process" );
@@ -103,7 +103,7 @@ class Admin extends CI_Controller {
 		}
 
 		// set common properties
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = "Account View";
 		$data["perm_list"] = $this->adminuiacl_model->get_all_perms();
 
@@ -167,7 +167,7 @@ class Admin extends CI_Controller {
 		$this->form_data->date_created = date ( 'm/d/Y', strtotime ( $acct->date_created ) );
 
 		// set common properties
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = 'Modify Account';
 		$data ["roles"] = $this->adminuiacl_model->get_group ();
 		// $data["role_array"] = $this->adminuiacl_model->user_current_group();
@@ -235,7 +235,7 @@ class Admin extends CI_Controller {
 		$data ["role_list"] = $this->adminuiacl_model->get_all_roles ();
 		$data ["perm_list"] = $this->adminuiacl_model->get_all_perms ();
 		// set common properties
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = 'YOU ARE ABOUT TO DEACTIVATE A USER ACCOUNT';
 		$data ["del_account"] = site_url ( "access_control/admin/del_account_process/{$user_id}" );
 		$data ["action"] = site_url ( "access_control/admin/account_delete" );
@@ -263,7 +263,7 @@ class Admin extends CI_Controller {
 		}
 
 		// set common properties
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = "Modify Account";
 		$data ["message"] = "";
 		$data ["passwd_message"] = "";
@@ -454,7 +454,7 @@ class Admin extends CI_Controller {
 		}
 
 		// set common properties
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = "Pending Account View";
 		$data ["link_back"] = anchor ( "access_control/admin/pending_request/", "<i class=\"fa fa-group fa-fw\"></i> Back to request list", array (
 				"class" => "btn btn-primary",
@@ -490,7 +490,7 @@ class Admin extends CI_Controller {
 		$config ["anchor_class"] = "class=\"btn btn-primary btn-sm\"";
 		$this->pagination->initialize ( $config );
 		$data ["pagination"] = $this->pagination->create_links ();
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = "Pending Request";
 		$data ["panel_title"] = "AdminUI Request";
 
@@ -548,7 +548,7 @@ class Admin extends CI_Controller {
 		$this->form_data->date_requested = date ( 'm/d/Y', strtotime ( $acct->date_requested ) );
 
 		// set common properties
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = 'Modify Pending Request';
 		$data ["message"] = '';
 		$data ["error"] = "";
@@ -577,7 +577,7 @@ class Admin extends CI_Controller {
 		$this->load->model ( "adminuiacl_model" );
 
 		// set common properties
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = "Modify Pending Request";
 		$data ["error"] = "";
 		$data ["action"] = site_url ( "access_control/admin/pend_account_modify" );
@@ -650,7 +650,7 @@ class Admin extends CI_Controller {
 		$this->form_data->date_requested = date ( 'm/d/Y', strtotime ( $acct->date_requested ) );
 
 		// set common properties
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = 'YOU ARE ABOUT TO DEACTIVATE A PENDING ACCOUNT';
 		$data ["del_pending_account"] = site_url ( "access_control/admin/del_pend_account_process/{$user_id}" );
 		$data ["action"] = site_url ( "access_control/admin/pend_account_delete" );
@@ -677,7 +677,7 @@ class Admin extends CI_Controller {
 			show_error ( "You do not have access to this section " . anchor ( $this->agent->referrer (), "Return", 'title="Go back to previous page"' ) );
 		}
 		// set common properties
-		$data ["title"] = "DOL APIv2 AdminUI Dashboard";
+		$data ["title"] = " APIv2 AdminUI Dashboard";
 		$data ["subtitle"] = "Request Status";
 		$data ["link_back"] = anchor ( "access_control/admin/account_manager/", "<i class=\"fa fa-group fa-fw\"></i> Back to list of admins", array (
 				"class" => "btn btn-primary",
